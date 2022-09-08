@@ -1,0 +1,113 @@
+{
+    "context": {
+        "transaction_id": "f579e146-2203-45cd-bb3a-0d7b9b6e790d",
+        "country": "IND",
+        "city": "std:080",
+        "message_id": "7fe2395a-0d4f-460b-9ee1-2ba11944c603",
+        "core_version": "1.0.0",
+        "ttl": "PT30S",
+        "bap_id": "stagingapigateway.bizom.in/ondc",
+        "domain": "nic2004:60232",
+        "action": "search",
+        "bap_uri": "https://stagingapigateway.bizom.in/ondc",
+        "timestamp": "2022-09-08T12:58:10.800Z"
+    },
+    "message": {
+        "intent": {
+            "payment": {
+                "@ondc/org/collection_amount": "0"
+            },
+            "fulfillment": {
+                "start": {
+                    "location": {
+                        "gps": "12.9369208,77.6249452",
+                        "address": {
+                            "area_code": "560038"
+                        }
+                    }
+                },
+                "end": {
+                    "location": {
+                        "address": {
+                            "area_code": "560101"
+                        },
+                        "gps": "12.9698066,77.7499632"
+                    }
+                },
+                "type": "Prepaid"
+            },
+            "category": {
+                "id": "Same Day Delivery"
+            },
+            "@ondc/org/payload_details": {
+                "weight": {
+                    "value": 0.34424999356269836,
+                    "unit": "Kilogram"
+                },
+                "category": "Grocery",
+                "value": {
+                    "value": 204.97000122070312,
+                    "currency": "INR"
+                }
+            }
+        }
+    }
+}
+
+{
+    "context": {
+        "transaction_id": "f579e146-2203-45cd-bb3a-0d7b9b6e790d",
+        "country": "IND",
+        "city": "std:080",
+        "message_id": "7fe2395a-0d4f-460b-9ee1-2ba11944c603",
+        "core_version": "1.0.0",
+        "ttl": "PT30S",
+        "bap_id": "stagingapigateway.bizom.in/ondc",
+        "domain": "nic2004:60232",
+        "action": "on_search",
+        "bap_uri": "https://stagingapigateway.bizom.in/ondc",
+        "timestamp": "2022-09-08T12:58:12.000Z",
+        "bpp_id": "uat.grab.in",
+        "bpp_uri": "https://uat.grab.in/beckn/bpp/"
+    },
+    "message": {
+        "catalog": {
+            "bpp/descriptor": {
+                "name": "Grab Logistics"
+            },
+            "bpp/providers": [
+                {
+                    "id": "grab-logistics",
+                    "descriptor": {
+                        "name": "Grab Logistics",
+                        "short_desc": "Grab Logistics",
+                        "long_desc": "Grab Logistics"
+                    },
+                    "items": [
+                        {
+                            "id": "same-day-delivery",
+                            "category_id": "Same Day Delivery",
+                            "descriptor": {
+                                "name": "Same Day Delivery",
+                                "short_desc": "Same Day Delivery",
+                                "long_desc": "Same Day Delivery"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "80.0"
+                            }
+                        }
+                    ],
+                    "categories": [
+                        {
+                            "id": "Same Day Delivery",
+                            "time": {
+                                "duration": "PT45M"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
