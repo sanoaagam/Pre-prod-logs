@@ -1,0 +1,285 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "action": "confirm",
+        "country": "IND",
+        "city": "std:080",
+        "core_version": "1.0.0",
+        "bpp_id": "stagingapigateway.bizom.in/ondc",
+        "bpp_uri": "https://stagingapigateway.bizom.in/ondc",
+        "bap_id": "www.firstforwardondc.com",
+        "bap_uri": "https://api.plotch.ai/ondc/v1/146622/",
+        "transaction_id": "3cda8735-4f9a-428a-ba8e-591555567e99",
+        "message_id": "f9a2db57-3c04-42d9-a94c-e2675412782a",
+        "timestamp": "2022-09-08T13:00:41.248Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "id": "ca995b32-74fa-40be-83d2-27ca760ff7c6",
+            "state": "Created",
+            "billing": {
+                "address": {
+                    "area_code": "560037",
+                    "city": "Bangalore",
+                    "country": "IN",
+                    "door": "74/A Bangalroe",
+                    "locality": "74/A Bangalroe",
+                    "name": "74/A Bangalroe",
+                    "state": "KARNATAKA"
+                },
+                "created_at": "2022-09-08T18:30:41",
+                "email": "samarth@gmail.com",
+                "name": "SamrthPatel",
+                "phone": "9898141644",
+                "updated_at": "2022-09-08T18:30:41"
+            },
+            "fulfillments": [
+                {
+                    "end": {
+                        "contact": {
+                            "email": "samarth@gmail.com",
+                            "phone": "9898141644"
+                        },
+                        "location": {
+                            "address": {
+                                "area_code": "560037",
+                                "city": "Bangalore",
+                                "country": "IN",
+                                "door": "",
+                                "locality": "",
+                                "name": "74/A Bangalroe",
+                                "state": "KARNATAKA"
+                            },
+                            "gps": "12.9698066,77.7499632"
+                        }
+                    },
+                    "id": "f579e146-2203-45cd-bb3a-0d7b9b6e790d",
+                    "tracking": false,
+                    "type": "Delivery",
+                    "customer": {
+                        "person": {
+                            "name": "Samrth Patel"
+                        }
+                    },
+                    "provider_id": "3"
+                }
+            ],
+            "quote": {
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "106",
+                        "price": {
+                            "currency": "INR",
+                            "value": "204.97"
+                        },
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "LuvIt ChocoPops Pack of 1 - 7.65gx45"
+                    },
+                    {
+                        "price": {
+                            "currency": "INR",
+                            "value": "80.0"
+                        },
+                        "@ondc/org/title_type": "delivery",
+                        "title": "Delivery charges"
+                    }
+                ],
+                "price": {
+                    "currency": "INR",
+                    "value": "284.97"
+                }
+            },
+            "items": [
+                {
+                    "fulfillment_id": "f579e146-2203-45cd-bb3a-0d7b9b6e790d",
+                    "id": "106",
+                    "quantity": {
+                        "count": 1
+                    }
+                }
+            ],
+            "payment": {
+                "type": "POST-FULFILLMENT",
+                "params": {
+                    "amount": "284.97",
+                    "currency": "INR"
+                },
+                "status": "NOT-PAID",
+                "collected_by": "BPP",
+                "@ondc/org/withholding_amount": 0,
+                "@ondc/org/return_window": 0,
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": 3,
+                "@ondc/org/settlement_basis": "P2D",
+                "@ondc/org/settlement_window": "P2D"
+            },
+            "provider": {
+                "id": "3",
+                "locations": [
+                    {
+                        "address": {
+                            "city": "Bengaluru",
+                            "door": "509",
+                            "name": "NSTL Chilis",
+                            "locality": "kormangala",
+                            "area_code": "560038",
+                            "state": "Karnataka",
+                            "street": "6th Cross Road"
+                        },
+                        "id": "3",
+                        "gps": "12.9369208,77.6249452"
+                    }
+                ]
+            }
+        }
+    }
+}
+
+{
+    "context": {
+        "transaction_id": "3cda8735-4f9a-428a-ba8e-591555567e99",
+        "country": "IND",
+        "bpp_id": "stagingapigateway.bizom.in/ondc",
+        "city": "std:080",
+        "message_id": "f9a2db57-3c04-42d9-a94c-e2675412782a",
+        "core_version": "1.0.0",
+        "bap_id": "www.firstforwardondc.com",
+        "domain": "nic2004:52110",
+        "bpp_uri": "https://stagingapigateway.bizom.in/ondc",
+        "action": "on_confirm",
+        "bap_uri": "https://api.plotch.ai/ondc/v1/146622/",
+        "timestamp": "2022-09-08T13:00:41.491Z"
+    },
+    "message": {
+        "order": {
+            "fulfillments": [
+                {
+                    "start": {
+                        "instructions": {
+                            "name": "Pickup ready",
+                            "short_desc": "Pickup is ready to be shipped"
+                        },
+                        "contact": {
+                            "phone": "8888888888",
+                            "email": "dumy@gmail.com"
+                        },
+                        "location": {
+                            "id": "3",
+                            "gps": "12.9369208,77.6249452",
+                            "descriptor": {
+                                "name": "GCPL",
+                                "images": [
+                                    "https://617778.smushcdn.com/2413992/wp-content/uploads/2021/07/Bizom_logo_Blue-1060879244-1635316195620.png?lossy=1&strip=1&webp=1"
+                                ]
+                            }
+                        }
+                    },
+                    "end": {
+                        "contact": {
+                            "phone": "9898141644",
+                            "email": "samarth@gmail.com"
+                        },
+                        "location": {
+                            "address": {
+                                "country": "IN",
+                                "door": "",
+                                "city": "Bangalore",
+                                "area_code": "560037",
+                                "locality": "",
+                                "name": "74/A Bangalroe",
+                                "state": "KARNATAKA"
+                            },
+                            "gps": "12.9698066,77.7499632"
+                        }
+                    },
+                    "id": "f579e146-2203-45cd-bb3a-0d7b9b6e790d",
+                    "type": "Delivery",
+                    "tracking": true
+                }
+            ],
+            "quote": {
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "106",
+                        "price": {
+                            "currency": "INR",
+                            "value": "204.97"
+                        },
+                        "@ondc/org/title_type": "item",
+                        "title": "LuvIt ChocoPops Pack of 1 - 7.65gx45",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
+                        "price": {
+                            "currency": "INR",
+                            "value": "80.0"
+                        },
+                        "@ondc/org/title_type": "delivery",
+                        "title": "Delivery charges"
+                    }
+                ],
+                "price": {
+                    "currency": "INR",
+                    "value": "284.97"
+                }
+            },
+            "updated_at": "2022-09-08T13:00:42.498Z",
+            "provider": {
+                "locations": [
+                    {
+                        "id": "3"
+                    }
+                ],
+                "id": "3"
+            },
+            "payment": {
+                "@ondc/org/return_window": 0,
+                "@ondc/org/settlement_window": "P2D",
+                "@ondc/org/settlement_basis": "P2D",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/withholding_amount": 0,
+                "collected_by": "BPP",
+                "type": "POST-FULFILLMENT",
+                "params": {
+                    "amount": 284.97,
+                    "currency": "INR"
+                },
+                "status": "NOT-PAID",
+                "@ondc/org/buyer_app_finder_fee_amount": 3
+            },
+            "id": "ca995b32-74fa-40be-83d2-27ca760ff7c6",
+            "state": "Created",
+            "items": [
+                {
+                    "quantity": {
+                        "count": 1
+                    },
+                    "id": "106",
+                    "fulfillment_id": "f579e146-2203-45cd-bb3a-0d7b9b6e790d"
+                }
+            ],
+            "billing": {
+                "address": {
+                    "country": "IN",
+                    "door": "74/A Bangalroe",
+                    "city": "Bangalore",
+                    "area_code": "560037",
+                    "locality": "74/A Bangalroe",
+                    "name": "74/A Bangalroe",
+                    "state": "KARNATAKA"
+                },
+                "updated_at": "2022-09-08T18:30:41",
+                "phone": "9898141644",
+                "name": "SamrthPatel",
+                "created_at": "2022-09-08T18:30:41",
+                "email": "samarth@gmail.com"
+            }
+        }
+    }
+}
