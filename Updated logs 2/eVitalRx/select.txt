@@ -1,0 +1,324 @@
+Request from: www.firstforwardondc.com
+--------------------------------------
+{
+       "context": {
+              "domain": "nic2004:52110",
+              "action": "select",
+              "country": "IND",
+              "city": "std:080",
+              "core_version": "1.0.0",
+              "bpp_id": "ondc.evitalrx.in",
+              "bpp_uri": "https://ondc.evitalrx.in/",
+              "bap_id": "www.firstforwardondc.com",
+              "bap_uri": "https://api.plotch.ai/ondc/v1/146622/",
+              "transaction_id": "4ceafd03-5b6d-4d8c-a2c2-3577dd4c3ad1",
+              "message_id": "a1cd022a-5ec4-4843-9335-d825a2e25321",
+              "timestamp": "2022-09-07T11:28:42.694Z",
+              "ttl": "PT30S"
+       },
+       "message": {
+              "order": {
+                     "fulfillments": [
+                            {
+                                   "end": {
+                                          "location": {
+                                                 "gps": "23.022505,72.5713621",
+                                                 "address": {
+                                                        "area_code": "382352"
+                                                 }
+                                          }
+                                   }
+                            }
+                     ],
+                     "items": [
+                            {
+                                   "id": "8XlTP5Mglr1MTvN3AwE7Aw==",
+                                   "quantity": {
+                                          "count": 3
+                                   }
+                            }
+                     ],
+                     "provider": {
+                            "id": "caaW7GcXGRvkJ93wd0O5XQ==",
+                            "locations": [
+                                   {
+                                          "id": "caaW7GcXGRvkJ93wd0O5XQ=="
+                                   }
+                            ]
+                     }
+              }
+       }
+}
+Response to: www.firstforwardondc.com
+-------------------------------------
+{
+       "context": {
+              "action": "on_select",
+              "transaction_id": "4ceafd03-5b6d-4d8c-a2c2-3577dd4c3ad1",
+              "message_id": "a1cd022a-5ec4-4843-9335-d825a2e25321",
+              "bap_id": "www.firstforwardondc.com",
+              "bap_uri": "https://api.plotch.ai/ondc/v1/146622/",
+              "domain": "nic2004:52110",
+              "country": "IND",
+              "city": "std:080",
+              "core_version": "0.9.3",
+              "bpp_id": "ondc.evitalrx.in",
+              "bpp_uri": "https://ondc.evitalrx.in/",
+              "ttl": "PT30S",
+              "key": "IRhD+bmmOQNVyXKziYzr0jMDkeAzS3y3Vx6oqiEA3eQ=",
+              "timestamp": "2022-09-07T11:28:43.116Z"
+       },
+       "message": {
+              "order": {
+                     "provider": {
+                            "id": "caaW7GcXGRvkJ93wd0O5XQ==",
+                            "descriptor": {
+                                   "name": "Health Pharmacy4",
+                                   "symbol": "https://d1tu4pmhr82np8.cloudfront.net/storage/chemists/kyc/joaq2i930s.jpg",
+                                   "short_desc": "Jay Patel",
+                                   "long_desc": "Jay Patel",
+                                   "images": [
+                                          "https://d1tu4pmhr82np8.cloudfront.net/storage/chemists/kyc/p04qoil1kr.jpg",
+                                          "https://d1tu4pmhr82np8.cloudfront.net/storage/chemists/kyc/default.jpg"
+                                   ]
+                            },
+                            "locations": [
+                                   {
+                                          "id": "caaW7GcXGRvkJ93wd0O5XQ==",
+                                          "gps": "23.0179652,72.5677348",
+                                          "address": {
+                                                 "street": "Shop No. 07, Sharda Complex .",
+                                                 "city": "Ahmedabad",
+                                                 "area_code": "382330",
+                                                 "state": "Gujarat"
+                                          }
+                                   }
+                            ],
+                            "ttl": "P1H",
+                            "rateable": true
+                     },
+                     "items": [
+                            {
+                                   "fulfillment_id": "1",
+                                   "id": "8XlTP5Mglr1MTvN3AwE7Aw==",
+                                   "price": {
+                                          "currency": "INR",
+                                          "value": 100
+                                   },
+                                   "quantity": {
+                                          "selected": {
+                                                 "count": 3
+                                          }
+                                   }
+                            }
+                     ],
+                     "fulfillments": [
+                            {
+                                   "id": "1",
+                                   "@ondc/org/provider_name": "Jay Patel",
+                                   "tracking": false,
+                                   "@ondc/org/category": "Immediate Delivery",
+                                   "@ondc/org/TAT": "PT1D",
+                                   "state": {
+                                          "descriptor": {
+                                                 "name": "Serviceable"
+                                          }
+                                   }
+                            }
+                     ],
+                     "quote": {
+                            "price": {
+                                   "currency": "INR",
+                                   "value": 300
+                            },
+                            "breakup": [
+                                   {
+                                          "@ondc/org/item_id": "8XlTP5Mglr1MTvN3AwE7Aw==",
+                                          "@ondc/org/item_quantity": {
+                                                 "count": 3
+                                          },
+                                          "title": "Navratna Oil",
+                                          "item": {
+                                                 "quantity": {
+                                                        "available": {
+                                                               "count": 72
+                                                        },
+                                                        "maximum": {
+                                                               "count": 145
+                                                        }
+                                                 },
+                                                 "count": 1
+                                          },
+                                          "@ondc/org/title_type": "item",
+                                          "price": {
+                                                 "currency": "INR",
+                                                 "value": 300
+                                          }
+                                   }
+                            ],
+                            "ttl": "P1H"
+                     }
+              }
+       }
+}
+
+
+
+Request from: beta.mystore.in
+------------------------------
+
+{
+       "context": {
+              "domain": "nic2004:52110",
+              "country": "IND",
+              "city": "std:080",
+              "core_version": "1.0.0",
+              "action": "select",
+              "bap_id": "beta.mystore.in",
+              "bap_uri": "https://beta.mystore.in/ondc/1.0/",
+              "bpp_id": "ondc.evitalrx.in",
+              "bpp_uri": "https://ondc.evitalrx.in",
+              "transaction_id": "adc7bd80-e87b-4924-8ebf-62428a879869",
+              "message_id": "1e5ec51f-6a97-4937-8d0d-f2ae9be85847",
+              "timestamp": "2022-09-07T12:01:19.703Z"
+       },
+       "message": {
+              "order": {
+                     "provider": {
+                            "id": "caaW7GcXGRvkJ93wd0O5XQ=="
+                     },
+                     "items": [
+                            {
+                                   "id": "8XlTP5Mglr1MTvN3AwE7Aw==",
+                                   "quantity": {
+                                          "count": 3
+                                   }
+                            }
+                     ],
+                     "fulfillments": [
+                            {
+                                   "end": {
+                                          "location": {
+                                                 "gps": "23.0100000,72.5600000",
+                                                 "address": {
+                                                        "area_code": "380007"
+                                                 }
+                                          }
+                                   }
+                            }
+                     ]
+              }
+       }
+}
+Response to: beta.mystore.in
+-----------------------------
+{
+       "context": {
+              "action": "on_select",
+              "transaction_id": "adc7bd80-e87b-4924-8ebf-62428a879869",
+              "message_id": "1e5ec51f-6a97-4937-8d0d-f2ae9be85847",
+              "bap_id": "beta.mystore.in",
+              "bap_uri": "https://beta.mystore.in/ondc/1.0/",
+              "domain": "nic2004:52110",
+              "country": "IND",
+              "city": "std:080",
+              "core_version": "0.9.3",
+              "bpp_id": "ondc.evitalrx.in",
+              "bpp_uri": "https://ondc.evitalrx.in/",
+              "ttl": "PT30S",
+              "key": "IRhD+bmmOQNVyXKziYzr0jMDkeAzS3y3Vx6oqiEA3eQ=",
+              "timestamp": "2022-09-07T12:01:20.936Z"
+       },
+       "message": {
+              "order": {
+                     "provider": {
+                            "id": "caaW7GcXGRvkJ93wd0O5XQ==",
+                            "descriptor": {
+                                   "name": "Health Pharmacy4",
+                                   "symbol": "https://d1tu4pmhr82np8.cloudfront.net/storage/chemists/kyc/joaq2i930s.jpg",
+                                   "short_desc": "Jay Patel",
+                                   "long_desc": "Jay Patel",
+                                   "images": [
+                                          "https://d1tu4pmhr82np8.cloudfront.net/storage/chemists/kyc/p04qoil1kr.jpg",
+                                          "https://d1tu4pmhr82np8.cloudfront.net/storage/chemists/kyc/default.jpg"
+                                   ]
+                            },
+                            "locations": [
+                                   {
+                                          "id": "caaW7GcXGRvkJ93wd0O5XQ==",
+                                          "gps": "23.0179652,72.5677348",
+                                          "address": {
+                                                 "street": "Shop No. 07, Sharda Complex .",
+                                                 "city": "Ahmedabad",
+                                                 "area_code": "382330",
+                                                 "state": "Gujarat"
+                                          }
+                                   }
+                            ],
+                            "ttl": "P1H",
+                            "rateable": true
+                     },
+                     "items": [
+                            {
+                                   "fulfillment_id": "1",
+                                   "id": "8XlTP5Mglr1MTvN3AwE7Aw==",
+                                   "price": {
+                                          "currency": "INR",
+                                          "value": 100
+                                   },
+                                   "quantity": {
+                                          "selected": {
+                                                 "count": 3
+                                          }
+                                   }
+                            }
+                     ],
+                     "fulfillments": [
+                            {
+                                   "id": "1",
+                                   "@ondc/org/provider_name": "Jay Patel",
+                                   "tracking": false,
+                                   "@ondc/org/category": "Immediate Delivery",
+                                   "@ondc/org/TAT": "PT1D",
+                                   "state": {
+                                          "descriptor": {
+                                                 "name": "Serviceable"
+                                          }
+                                   }
+                            }
+                     ],
+                     "quote": {
+                            "price": {
+                                   "currency": "INR",
+                                   "value": 300
+                            },
+                            "breakup": [
+                                   {
+                                          "@ondc/org/item_id": "8XlTP5Mglr1MTvN3AwE7Aw==",
+                                          "@ondc/org/item_quantity": {
+                                                 "count": 3
+                                          },
+                                          "title": "Navratna Oil",
+                                          "item": {
+                                                 "quantity": {
+                                                        "available": {
+                                                               "count": 70
+                                                        },
+                                                        "maximum": {
+                                                               "count": 141
+                                                        }
+                                                 },
+                                                 "count": 1
+                                          },
+                                          "@ondc/org/title_type": "item",
+                                          "price": {
+                                                 "currency": "INR",
+                                                 "value": 300
+                                          }
+                                   }
+                            ],
+                            "ttl": "P1H"
+                     }
+              }
+       }
+}

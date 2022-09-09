@@ -1,0 +1,282 @@
+Request from: www.firstforwardondc.com
+--------------------------------------
+{
+       "context": {
+              "domain": "nic2004:52110",
+              "action": "search",
+              "country": "IND",
+              "city": "std:080",
+              "core_version": "1.0.0",
+              "bap_id": "www.firstforwardondc.com",
+              "bap_uri": "https://api.plotch.ai/ondc/v1/146622/",
+              "transaction_id": "ebfc062f-52da-4463-a9e2-31e708db36ae",
+              "message_id": "5581a87e-2a3d-45f7-adc5-94fe59cf9dc7",
+              "timestamp": "2022-09-07T11:11:36.741Z",
+              "ttl": "PT30S"
+       },
+       "message": {
+              "intent": {
+                     "item": {
+                            "descriptor": {
+                                   "name": "navratna"
+                            }
+                     },
+                     "fulfillment": {
+                            "end": {
+                                   "location": {
+                                          "gps": "23.022505,72.5713621"
+                                   }
+                            }
+                     },
+                     "payment": {
+                            "@ondc/org/buyer_app_finder_fee_type": "percent",
+                            "@ondc/org/buyer_app_finder_fee_amount": "3"
+                     }
+              }
+       }
+}
+
+Response to: www.firstforwardondc.com
+-------------------------------------
+{
+       "context": {
+              "action": "on_search",
+              "transaction_id": "ebfc062f-52da-4463-a9e2-31e708db36ae",
+              "message_id": "5581a87e-2a3d-45f7-adc5-94fe59cf9dc7",
+              "bap_id": "www.firstforwardondc.com",
+              "bap_uri": "https://api.plotch.ai/ondc/v1/146622/",
+              "domain": "nic2004:52110",
+              "country": "IND",
+              "city": "std:080",
+              "core_version": "0.9.3",
+              "bpp_id": "ondc.evitalrx.in",
+              "bpp_uri": "https://ondc.evitalrx.in/",
+              "ttl": "PT30S",
+              "key": "IRhD+bmmOQNVyXKziYzr0jMDkeAzS3y3Vx6oqiEA3eQ=",
+              "timestamp": "2022-09-07T11:11:37.729Z"
+       },
+       "message": {
+              "catalog": {
+                     "bpp/fulfillments": [
+                            {
+                                   "id": "1",
+                                   "type": "Delivery"
+                            }
+                     ],
+                     "bpp/descriptor": {
+                            "name": "eVitalRx",
+                            "symbol": "https://www.evitalrx.in/assets/images/eVitalRx_logo.png",
+                            "short_desc": "Cloud Based Pharmacy Billing, Inventory and CRM",
+                            "long_desc": "Equality Healthcare is a Private Limited company based in India, engaged in developing technological solutions to revolutionize Healthcare scenario of India. At Equality Healthcare, we aim to make information seamlessly available to patients and healthcare professional in order to assist better treatment plans and improve the patient outcomes.",
+                            "images": [
+                                   "https://d1tu4pmhr82np8.cloudfront.net/storage/extra/chemist_landing_page/banners/slider-1904.jpeg",
+                                   "https://d1tu4pmhr82np8.cloudfront.net/storage/extra/chemist_landing_page/banners/slider_banner4.jpg"
+                            ]
+                     },
+                     "bpp/providers": [
+                            {
+                                   "id": "caaW7GcXGRvkJ93wd0O5XQ==",
+                                   "descriptor": {
+                                          "name": "Health Pharmacy4",
+                                          "symbol": "https://d1tu4pmhr82np8.cloudfront.net/storage/chemists/kyc/joaq2i930s.jpg",
+                                          "short_desc": "Jay Patel",
+                                          "long_desc": "Jay Patel",
+                                          "images": [
+                                                 "https://d1tu4pmhr82np8.cloudfront.net/storage/chemists/kyc/p04qoil1kr.jpg",
+                                                 "https://d1tu4pmhr82np8.cloudfront.net/storage/chemists/kyc/default.jpg"
+                                          ]
+                                   },
+                                   "items": [
+                                          {
+                                                 "id": "8XlTP5Mglr1MTvN3AwE7Aw==",
+                                                 "descriptor": {
+                                                        "name": "Navratna Oil",
+                                                        "short_desc": "1 Bottle of  100 Ml",
+                                                        "long_desc": "",
+                                                        "images": [
+                                                               "https://d1tu4pmhr82np8.cloudfront.net/storage/medicines/62e22985c7f86.jpg",
+                                                               "https://d1tu4pmhr82np8.cloudfront.net/storage/medicines/631872cb83846.jpg"
+                                                        ]
+                                                 },
+                                                 "price": {
+                                                        "currency": "INR",
+                                                        "value": 100,
+                                                        "maximum_value": 100
+                                                 },
+                                                 "category_id": "Packaged Commodities",
+                                                 "fulfillment_id": "1",
+                                                 "location_id": "caaW7GcXGRvkJ93wd0O5XQ==",
+                                                 "matched": true,
+                                                 "@ondc/org/returnable": false,
+                                                 "@ondc/org/cancellable": false,
+                                                 "@ondc/org/available_on_cod": true,
+                                                 "@ondc/org/time_to_ship": "PT1D",
+                                                 "@ondc/org/contact_details_consumer_care": "+919998931162,+919998931162",
+                                                 "@ondc/org/statutory_reqs_packaged_commodities": {
+                                                        "manufacturer_or_packer_name": "Emami Ltd",
+                                                        "manufacturer_or_packer_address": "India",
+                                                        "net_quantity_or_measure_of_commodity_in_pkg": "1 Bottle of  100 Ml",
+                                                        "imported_product_country_of_origin": "India"
+                                                 }
+                                          }
+                                   ],
+                                   "locations": [
+                                          {
+                                                 "id": "caaW7GcXGRvkJ93wd0O5XQ==",
+                                                 "gps": "23.0179652,72.5677348",
+                                                 "address": {
+                                                        "street": "Shop No. 07, Sharda Complex ., Ahmedabad",
+                                                        "city": "Ahmedabad",
+                                                        "area_code": "382330",
+                                                        "state": "Gujarat"
+                                                 }
+                                          }
+                                   ],
+                                   "ttl": "PT30S",
+                                   "rateable": true
+                            }
+                     ]
+              }
+       }
+}
+
+
+Request from: beta.mystore.in
+------------------------------
+{
+       "context": {
+              "domain": "nic2004:52110",
+              "country": "IND",
+              "city": "std:080",
+              "core_version": "1.0.0",
+              "action": "search",
+              "bap_id": "beta.mystore.in",
+              "bap_uri": "https://beta.mystore.in/ondc/1.0/",
+              "transaction_id": "ce9b8ece-f99b-46a9-82bd-7b6b70524a63",
+              "message_id": "b82317d4-4e06-47ff-8d45-4cc7be59075a",
+              "timestamp": "2022-09-07T11:57:40.252Z"
+       },
+       "message": {
+              "intent": {
+                     "item": {
+                            "descriptor": {
+                                   "name": "navratna"
+                            }
+                     },
+                     "fulfillment": {
+                            "end": {
+                                   "location": {
+                                          "gps": "23.0100000,72.5600000"
+                                   }
+                            }
+                     },
+                     "payment": {
+                            "@ondc/org/buyer_app_finder_fee_type": "percent",
+                            "@ondc/org/buyer_app_finder_fee_amount": "3"
+                     }
+              }
+       }
+}
+Response to: beta.mystore.in
+-----------------------------
+{
+       "context": {
+              "action": "on_search",
+              "transaction_id": "ce9b8ece-f99b-46a9-82bd-7b6b70524a63",
+              "message_id": "b82317d4-4e06-47ff-8d45-4cc7be59075a",
+              "bap_id": "beta.mystore.in",
+              "bap_uri": "https://beta.mystore.in/ondc/1.0/",
+              "domain": "nic2004:52110",
+              "country": "IND",
+              "city": "std:080",
+              "core_version": "0.9.3",
+              "bpp_id": "ondc.evitalrx.in",
+              "bpp_uri": "https://ondc.evitalrx.in/",
+              "ttl": "PT30S",
+              "key": "IRhD+bmmOQNVyXKziYzr0jMDkeAzS3y3Vx6oqiEA3eQ=",
+              "timestamp": "2022-09-07T11:57:40.872Z"
+       },
+       "message": {
+              "catalog": {
+                     "bpp/fulfillments": [
+                            {
+                                   "id": "1",
+                                   "type": "Delivery"
+                            }
+                     ],
+                     "bpp/descriptor": {
+                            "name": "eVitalRx",
+                            "symbol": "https://www.evitalrx.in/assets/images/eVitalRx_logo.png",
+                            "short_desc": "Cloud Based Pharmacy Billing, Inventory and CRM",
+                            "long_desc": "Equality Healthcare is a Private Limited company based in India, engaged in developing technological solutions to revolutionize Healthcare scenario of India. At Equality Healthcare, we aim to make information seamlessly available to patients and healthcare professional in order to assist better treatment plans and improve the patient outcomes.",
+                            "images": [
+                                   "https://d1tu4pmhr82np8.cloudfront.net/storage/extra/chemist_landing_page/banners/slider-1904.jpeg",
+                                   "https://d1tu4pmhr82np8.cloudfront.net/storage/extra/chemist_landing_page/banners/slider_banner4.jpg"
+                            ]
+                     },
+                     "bpp/providers": [
+                            {
+                                   "id": "caaW7GcXGRvkJ93wd0O5XQ==",
+                                   "descriptor": {
+                                          "name": "Health Pharmacy4",
+                                          "symbol": "https://d1tu4pmhr82np8.cloudfront.net/storage/chemists/kyc/joaq2i930s.jpg",
+                                          "short_desc": "Jay Patel",
+                                          "long_desc": "Jay Patel",
+                                          "images": [
+                                                 "https://d1tu4pmhr82np8.cloudfront.net/storage/chemists/kyc/p04qoil1kr.jpg",
+                                                 "https://d1tu4pmhr82np8.cloudfront.net/storage/chemists/kyc/default.jpg"
+                                          ]
+                                   },
+                                   "items": [
+                                          {
+                                                 "id": "8XlTP5Mglr1MTvN3AwE7Aw==",
+                                                 "descriptor": {
+                                                        "name": "Navratna Oil",
+                                                        "short_desc": "1 Bottle of  100 Ml",
+                                                        "long_desc": "",
+                                                        "images": [
+                                                               "https://d1tu4pmhr82np8.cloudfront.net/storage/medicines/62e22985c7f86.jpg",
+                                                               "https://d1tu4pmhr82np8.cloudfront.net/storage/medicines/631872cb83846.jpg"
+                                                        ]
+                                                 },
+                                                 "price": {
+                                                        "currency": "INR",
+                                                        "value": 100,
+                                                        "maximum_value": 100
+                                                 },
+                                                 "category_id": "Packaged Commodities",
+                                                 "fulfillment_id": "1",
+                                                 "location_id": "caaW7GcXGRvkJ93wd0O5XQ==",
+                                                 "matched": true,
+                                                 "@ondc/org/returnable": false,
+                                                 "@ondc/org/cancellable": false,
+                                                 "@ondc/org/available_on_cod": true,
+                                                 "@ondc/org/time_to_ship": "PT1D",
+                                                 "@ondc/org/contact_details_consumer_care": "+919998931162,+919998931162",
+                                                 "@ondc/org/statutory_reqs_packaged_commodities": {
+                                                        "manufacturer_or_packer_name": "Emami Ltd",
+                                                        "manufacturer_or_packer_address": "India",
+                                                        "net_quantity_or_measure_of_commodity_in_pkg": "1 Bottle of  100 Ml",
+                                                        "imported_product_country_of_origin": "India"
+                                                 }
+                                          }
+                                   ],
+                                   "locations": [
+                                          {
+                                                 "id": "caaW7GcXGRvkJ93wd0O5XQ==",
+                                                 "gps": "23.0179652,72.5677348",
+                                                 "address": {
+                                                        "street": "Shop No. 07, Sharda Complex ., Ahmedabad",
+                                                        "city": "Ahmedabad",
+                                                        "area_code": "382330",
+                                                        "state": "Gujarat"
+                                                 }
+                                          }
+                                   ],
+                                   "ttl": "PT30S",
+                                   "rateable": true
+                            }
+                     ]
+              }
+       }
+}

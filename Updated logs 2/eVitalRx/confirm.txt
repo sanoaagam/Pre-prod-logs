@@ -1,0 +1,613 @@
+Request from: www.firstforwardondc.com
+------------------------------------------
+{
+       "context": {
+              "domain": "nic2004:52110",
+              "action": "confirm",
+              "country": "IND",
+              "city": "std:080",
+              "core_version": "1.0.0",
+              "bpp_id": "ondc.evitalrx.in",
+              "bpp_uri": "https://ondc.evitalrx.in/",
+              "bap_id": "www.firstforwardondc.com",
+              "bap_uri": "https://api.plotch.ai/ondc/v1/146622/",
+              "transaction_id": "4ceafd03-5b6d-4d8c-a2c2-3577dd4c3ad1",
+              "message_id": "b99c51e7-6243-4395-bb96-ff70c4d89def",
+              "timestamp": "2022-09-07T11:35:55.841Z",
+              "ttl": "PT30S"
+       },
+       "message": {
+              "order": {
+                     "id": "61e8fbd7-ed54-4b93-b81f-921ebe0644e1",
+                     "state": "Created",
+                     "billing": {
+                            "address": {
+                                   "area_code": 560002,
+                                   "city": "Bangalore",
+                                   "country": "IN",
+                                   "door": "c-32, pushpak city, The Golden Leaf hotel , hathijan- Mahemedabad Road, Hathijan, Ahmedabad",
+                                   "locality": "c-32, pushpak city, The Golden Leaf hotel , hathijan- Mahemedabad Road, Hathijan, Ahmedabad",
+                                   "name": "c-32, pushpak city, The Golden Leaf hotel , hathijan- Mahemedabad Road, Hathijan, Ahmedabad",
+                                   "state": "KARNATAKA",
+                                   "building": "",
+                                   "street": "",
+                                   "ward": ""
+                            },
+                            "created_at": "2022-09-07T17:05:55",
+                            "email": "evital.manav@gmail.com",
+                            "name": "manavpatel",
+                            "phone": "7043120038",
+                            "updated_at": "2022-09-07T17:05:55"
+                     },
+                     "fulfillments": [
+                            {
+                                   "end": {
+                                          "contact": {
+                                                 "email": "evital.manav@gmail.com",
+                                                 "phone": "7043120038"
+                                          },
+                                          "location": {
+                                                 "address": {
+                                                        "area_code": "560002",
+                                                        "city": "Bangalore",
+                                                        "country": "IN",
+                                                        "door": "",
+                                                        "locality": "",
+                                                        "name": "c-32, pushpak city, The Golden Leaf hotel , hathijan- Mahemedabad Road, Hathijan, Ahmedabad",
+                                                        "state": "KARNATAKA"
+                                                 },
+                                                 "gps": "23.022505,72.5713621"
+                                          }
+                                   },
+                                   "id": "1",
+                                   "tracking": false,
+                                   "type": "Delivery",
+                                   "customer": {
+                                          "person": {
+                                                 "name": "manav patel"
+                                          }
+                                   },
+                                   "provider_id": "caaW7GcXGRvkJ93wd0O5XQ=="
+                            }
+                     ],
+                     "quote": {
+                            "breakup": [
+                                   {
+                                          "title": "Navratna Oil",
+                                          "price": {
+                                                 "currency": "INR",
+                                                 "value": 300
+                                          },
+                                          "@ondc/org/title_type": "item",
+                                          "item": {
+                                                 "count": 1,
+                                                 "quantity": {
+                                                        "available": {
+                                                               "count": 72
+                                                        },
+                                                        "maximum": {
+                                                               "count": 145
+                                                        }
+                                                 }
+                                          },
+                                          "@ondc/org/item_quantity": {
+                                                 "count": 3
+                                          },
+                                          "@ondc/org/item_id": "8XlTP5Mglr1MTvN3AwE7Aw=="
+                                   }
+                            ],
+                            "price": {
+                                   "currency": "INR",
+                                   "value": 300
+                            },
+                            "ttl": "P1D"
+                     },
+                     "items": [
+                            {
+                                   "fulfillment_id": "1",
+                                   "id": "8XlTP5Mglr1MTvN3AwE7Aw==",
+                                   "quantity": {
+                                          "count": 3
+                                   }
+                            }
+                     ],
+                     "payment": {
+                            "type": "POST-FULFILLMENT",
+                            "params": {
+                                   "amount": 300,
+                                   "currency": "INR"
+                            },
+                            "status": "NOT-PAID",
+                            "collected_by": "BPP",
+                            "@ondc/org/withholding_amount": "0.0",
+                            "@ondc/org/return_window": "0",
+                            "@ondc/org/buyer_app_finder_fee_type": "Percent",
+                            "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                            "@ondc/org/settlement_basis": "P2D",
+                            "@ondc/org/settlement_window": "P2D"
+                     },
+                     "provider": {
+                            "id": "caaW7GcXGRvkJ93wd0O5XQ==",
+                            "locations": [
+                                   {
+                                          "gps": "23.0179652,72.5677348",
+                                          "id": "caaW7GcXGRvkJ93wd0O5XQ==",
+                                          "address": {
+                                                 "city": "Ahmedabad",
+                                                 "state": "Gujarat",
+                                                 "street": "Shop No. 07, Sharda Complex ., Ahmedabad",
+                                                 "area_code": "382330"
+                                          }
+                                   }
+                            ]
+                     }
+              }
+       }
+}
+Response to: www.firstforwardondc.com
+-------------------------------------
+{
+       "context": {
+              "action": "on_confirm",
+              "transaction_id": "4ceafd03-5b6d-4d8c-a2c2-3577dd4c3ad1",
+              "message_id": "b99c51e7-6243-4395-bb96-ff70c4d89def",
+              "bap_id": "www.firstforwardondc.com",
+              "bap_uri": "https://api.plotch.ai/ondc/v1/146622/",
+              "domain": "nic2004:52110",
+              "country": "IND",
+              "city": "std:080",
+              "core_version": "0.9.3",
+              "bpp_id": "ondc.evitalrx.in",
+              "bpp_uri": "https://ondc.evitalrx.in/",
+              "ttl": "PT30S",
+              "key": "IRhD+bmmOQNVyXKziYzr0jMDkeAzS3y3Vx6oqiEA3eQ=",
+              "timestamp": "2022-09-07T11:35:56.838Z"
+       },
+       "message": {
+              "order": {
+                     "id": "61e8fbd7-ed54-4b93-b81f-921ebe0644e1",
+                     "state": "Created",
+                     "provider": {
+                            "id": "caaW7GcXGRvkJ93wd0O5XQ==",
+                            "descriptor": {
+                                   "name": "Health Pharmacy4",
+                                   "symbol": "https://d1tu4pmhr82np8.cloudfront.net/storage/chemists/kyc/joaq2i930s.jpg",
+                                   "short_desc": "Jay Patel",
+                                   "long_desc": "Jay Patel",
+                                   "images": [
+                                          "https://d1tu4pmhr82np8.cloudfront.net/storage/chemists/kyc/p04qoil1kr.jpg",
+                                          "https://d1tu4pmhr82np8.cloudfront.net/storage/chemists/kyc/default.jpg"
+                                   ]
+                            },
+                            "locations": [
+                                   {
+                                          "id": "caaW7GcXGRvkJ93wd0O5XQ==",
+                                          "gps": "23.0179652,72.5677348",
+                                          "address": {
+                                                 "street": "Shop No. 07, Sharda Complex .",
+                                                 "city": "Ahmedabad",
+                                                 "area_code": "382330",
+                                                 "state": "Gujarat"
+                                          }
+                                   }
+                            ],
+                            "ttl": "P1H",
+                            "rateable": true
+                     },
+                     "items": [
+                            {
+                                   "fulfillment_id": "1",
+                                   "id": "8XlTP5Mglr1MTvN3AwE7Aw==",
+                                   "quantity": {
+                                          "count": 3
+                                   }
+                            }
+                     ],
+                     "billing": {
+                            "address": {
+                                   "area_code": 560002,
+                                   "city": "Bangalore",
+                                   "country": "IN",
+                                   "door": "c-32, pushpak city, The Golden Leaf hotel , hathijan- Mahemedabad Road, Hathijan, Ahmedabad",
+                                   "locality": "c-32, pushpak city, The Golden Leaf hotel , hathijan- Mahemedabad Road, Hathijan, Ahmedabad",
+                                   "name": "c-32, pushpak city, The Golden Leaf hotel , hathijan- Mahemedabad Road, Hathijan, Ahmedabad",
+                                   "state": "KARNATAKA",
+                                   "building": "",
+                                   "street": "",
+                                   "ward": ""
+                            },
+                            "created_at": "2022-09-07T17:05:55",
+                            "email": "evital.manav@gmail.com",
+                            "name": "manavpatel",
+                            "phone": "7043120038",
+                            "updated_at": "2022-09-07T17:05:55"
+                     },
+                     "fulfillments": [
+                            {
+                                   "end": {
+                                          "contact": {
+                                                 "email": "evital.manav@gmail.com",
+                                                 "phone": "7043120038"
+                                          },
+                                          "location": {
+                                                 "address": {
+                                                        "area_code": "560002",
+                                                        "city": "Bangalore",
+                                                        "country": "IN",
+                                                        "door": "",
+                                                        "locality": "",
+                                                        "name": "c-32, pushpak city, The Golden Leaf hotel , hathijan- Mahemedabad Road, Hathijan, Ahmedabad",
+                                                        "state": "KARNATAKA"
+                                                 },
+                                                 "gps": "23.022505,72.5713621"
+                                          }
+                                   },
+                                   "id": "1",
+                                   "tracking": false,
+                                   "type": "Delivery",
+                                   "customer": {
+                                          "person": {
+                                                 "name": "manav patel"
+                                          }
+                                   },
+                                   "provider_id": "caaW7GcXGRvkJ93wd0O5XQ=="
+                            }
+                     ],
+                     "quote": {
+                            "price": {
+                                   "currency": "INR",
+                                   "value": 300
+                            },
+                            "breakup": [
+                                   {
+                                          "@ondc/org/item_id": "8XlTP5Mglr1MTvN3AwE7Aw==",
+                                          "@ondc/org/item_quantity": {
+                                                 "count": 3
+                                          },
+                                          "title": "Navratna Oil",
+                                          "item": {
+                                                 "quantity": {
+                                                        "available": {
+                                                               "count": 72
+                                                        },
+                                                        "maximum": {
+                                                               "count": 145
+                                                        }
+                                                 },
+                                                 "count": 1
+                                          },
+                                          "@ondc/org/title_type": "item",
+                                          "price": {
+                                                 "currency": "INR",
+                                                 "value": 300
+                                          }
+                                   }
+                            ],
+                            "ttl": "P1D"
+                     },
+                     "payment": {
+                            "type": "POST-FULFILLMENT",
+                            "params": {
+                                   "amount": 300,
+                                   "currency": "INR"
+                            },
+                            "status": "NOT-PAID",
+                            "collected_by": "BPP",
+                            "@ondc/org/withholding_amount": "0.0",
+                            "@ondc/org/return_window": "0",
+                            "@ondc/org/buyer_app_finder_fee_type": "Percent",
+                            "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                            "@ondc/org/settlement_basis": "P2D",
+                            "@ondc/org/settlement_window": "P2D"
+                     }
+              }
+       }
+}
+
+
+
+
+Request from: beta.mystore.in
+------------------------------
+{
+       "context": {
+              "domain": "nic2004:52110",
+              "country": "IND",
+              "city": "std:080",
+              "core_version": "1.0.0",
+              "action": "confirm",
+              "bap_id": "beta.mystore.in",
+              "bap_uri": "https://beta.mystore.in/ondc/1.0/",
+              "bpp_id": "ondc.evitalrx.in",
+              "bpp_uri": "https://ondc.evitalrx.in",
+              "transaction_id": "adc7bd80-e87b-4924-8ebf-62428a879869",
+              "message_id": "f9d30a21-f7cf-434d-aa21-97741af26778",
+              "timestamp": "2022-09-07T12:09:34.897Z"
+       },
+       "message": {
+              "order": {
+                     "id": "631889fecc10528d709d45c5",
+                     "state": "Created",
+                     "provider": {
+                            "id": "caaW7GcXGRvkJ93wd0O5XQ=="
+                     },
+                     "items": [
+                            {
+                                   "id": "8XlTP5Mglr1MTvN3AwE7Aw==",
+                                   "quantity": {
+                                          "count": 3
+                                   }
+                            }
+                     ],
+                     "billing": {
+                            "name": "manav patel",
+                            "address": {
+                                   "city": "ahemedabad",
+                                   "state": "Gujarat",
+                                   "country": "IN",
+                                   "door": "",
+                                   "name": "",
+                                   "building": "",
+                                   "street": "",
+                                   "locality": "",
+                                   "ward": "",
+                                   "area_code": ""
+                            },
+                            "email": "evital.manav@gmail.com",
+                            "phone": "+917043120038"
+                     },
+                     "quote": {
+                            "price": {
+                                   "currency": "INR",
+                                   "value": 300
+                            },
+                            "breakup": [
+                                   {
+                                          "@ondc/org/item_id": "8XlTP5Mglr1MTvN3AwE7Aw==",
+                                          "@ondc/org/item_quantity": {
+                                                 "count": 3
+                                          },
+                                          "title": "Navratna Oil",
+                                          "item": {
+                                                 "quantity": {
+                                                        "available": {
+                                                               "count": 70
+                                                        },
+                                                        "maximum": {
+                                                               "count": 141
+                                                        }
+                                                 },
+                                                 "count": 1
+                                          },
+                                          "@ondc/org/title_type": "item",
+                                          "price": {
+                                                 "currency": "INR",
+                                                 "value": 300
+                                          }
+                                   }
+                            ],
+                            "ttl": "P1D"
+                     },
+                     "payment": {
+                            "params": {
+                                   "transaction_id": "TXN-rxy0ic136",
+                                   "amount": "300.0000",
+                                   "currency": "INR"
+                            },
+                            "type": "ON-ORDER",
+                            "status": "PAID",
+                            "collected_by": "BAP"
+                     },
+                     "created_at": "2022-09-07T12:09:34.276Z",
+                     "fulfillments": [
+                            {
+                                   "type": "Delivery",
+                                   "tracking": false,
+                                   "start": {
+                                          "location": {
+                                                 "id": "caaW7GcXGRvkJ93wd0O5XQ==",
+                                                 "descriptor": {
+                                                        "name": "Health Pharmacy4"
+                                                 }
+                                          },
+                                          "time": {
+                                                 "range": {
+                                                        "start": "2022-09-07T12:01:20.698Z",
+                                                        "end": "2022-09-21T12:01:20.698Z"
+                                                 }
+                                          }
+                                   },
+                                   "end": {
+                                          "location": {
+                                                 "gps": "23.0100000,72.5600000",
+                                                 "address": {
+                                                        "door": "maninagar",
+                                                        "name": "maninagar",
+                                                        "locality": "maninagar",
+                                                        "city": "ahemedabad",
+                                                        "state": "Gujarat",
+                                                        "country": "IN",
+                                                        "area_code": "380008"
+                                                 }
+                                          },
+                                          "contact": {
+                                                 "phone": "+917043120038",
+                                                 "email": "evital.manav@gmail.com"
+                                          },
+                                          "time": {
+                                                 "range": {
+                                                        "start": "2022-09-07T12:01:20.698Z",
+                                                        "end": "2022-09-21T12:01:20.698Z"
+                                                 }
+                                          }
+                                   }
+                            }
+                     ]
+              }
+       }
+}
+Response to: beta.mystore.in
+-----------------------------
+
+{
+       "context": {
+              "action": "on_confirm",
+              "transaction_id": "adc7bd80-e87b-4924-8ebf-62428a879869",
+              "message_id": "f9d30a21-f7cf-434d-aa21-97741af26778",
+              "bap_id": "beta.mystore.in",
+              "bap_uri": "https://beta.mystore.in/ondc/1.0/",
+              "domain": "nic2004:52110",
+              "country": "IND",
+              "city": "std:080",
+              "core_version": "0.9.3",
+              "bpp_id": "ondc.evitalrx.in",
+              "bpp_uri": "https://ondc.evitalrx.in/",
+              "ttl": "PT30S",
+              "key": "IRhD+bmmOQNVyXKziYzr0jMDkeAzS3y3Vx6oqiEA3eQ=",
+              "timestamp": "2022-09-07T12:09:35.545Z"
+       },
+       "message": {
+              "order": {
+                     "id": "631889fecc10528d709d45c5",
+                     "state": "Created",
+                     "provider": {
+                            "id": "caaW7GcXGRvkJ93wd0O5XQ==",
+                            "descriptor": {
+                                   "name": "Health Pharmacy4",
+                                   "symbol": "https://d1tu4pmhr82np8.cloudfront.net/storage/chemists/kyc/joaq2i930s.jpg",
+                                   "short_desc": "Jay Patel",
+                                   "long_desc": "Jay Patel",
+                                   "images": [
+                                          "https://d1tu4pmhr82np8.cloudfront.net/storage/chemists/kyc/p04qoil1kr.jpg",
+                                          "https://d1tu4pmhr82np8.cloudfront.net/storage/chemists/kyc/default.jpg"
+                                   ]
+                            },
+                            "locations": [
+                                   {
+                                          "id": "caaW7GcXGRvkJ93wd0O5XQ==",
+                                          "gps": "23.0179652,72.5677348",
+                                          "address": {
+                                                 "street": "Shop No. 07, Sharda Complex .",
+                                                 "city": "Ahmedabad",
+                                                 "area_code": "382330",
+                                                 "state": "Gujarat"
+                                          }
+                                   }
+                            ],
+                            "ttl": "P1H",
+                            "rateable": true
+                     },
+                     "items": [
+                            {
+                                   "id": "8XlTP5Mglr1MTvN3AwE7Aw==",
+                                   "quantity": {
+                                          "count": 3
+                                   }
+                            }
+                     ],
+                     "billing": {
+                            "name": "manav patel",
+                            "address": {
+                                   "city": "ahemedabad",
+                                   "state": "Gujarat",
+                                   "country": "IN",
+                                   "door": "",
+                                   "name": "",
+                                   "building": "",
+                                   "street": "",
+                                   "locality": "",
+                                   "ward": "",
+                                   "area_code": ""
+                            },
+                            "email": "evital.manav@gmail.com",
+                            "phone": "+917043120038"
+                     },
+                     "fulfillments": [
+                            {
+                                   "type": "Delivery",
+                                   "tracking": false,
+                                   "start": {
+                                          "location": {
+                                                 "id": "caaW7GcXGRvkJ93wd0O5XQ==",
+                                                 "descriptor": {
+                                                        "name": "Health Pharmacy4"
+                                                 }
+                                          },
+                                          "time": {
+                                                 "range": {
+                                                        "start": "2022-09-07T12:01:20.698Z",
+                                                        "end": "2022-09-21T12:01:20.698Z"
+                                                 }
+                                          }
+                                   },
+                                   "end": {
+                                          "location": {
+                                                 "gps": "23.0100000,72.5600000",
+                                                 "address": {
+                                                        "door": "maninagar",
+                                                        "name": "maninagar",
+                                                        "locality": "maninagar",
+                                                        "city": "ahemedabad",
+                                                        "state": "Gujarat",
+                                                        "country": "IN",
+                                                        "area_code": "380008"
+                                                 }
+                                          },
+                                          "contact": {
+                                                 "phone": "+917043120038",
+                                                 "email": "evital.manav@gmail.com"
+                                          },
+                                          "time": {
+                                                 "range": {
+                                                        "start": "2022-09-07T12:01:20.698Z",
+                                                        "end": "2022-09-21T12:01:20.698Z"
+                                                 }
+                                          }
+                                   }
+                            }
+                     ],
+                     "quote": {
+                            "price": {
+                                   "currency": "INR",
+                                   "value": 300
+                            },
+                            "breakup": [
+                                   {
+                                          "@ondc/org/item_id": "8XlTP5Mglr1MTvN3AwE7Aw==",
+                                          "@ondc/org/item_quantity": {
+                                                 "count": 3
+                                          },
+                                          "title": "Navratna Oil",
+                                          "item": {
+                                                 "quantity": {
+                                                        "available": {
+                                                               "count": 70
+                                                        },
+                                                        "maximum": {
+                                                               "count": 141
+                                                        }
+                                                 },
+                                                 "count": 1
+                                          },
+                                          "@ondc/org/title_type": "item",
+                                          "price": {
+                                                 "currency": "INR",
+                                                 "value": 300
+                                          }
+                                   }
+                            ],
+                            "ttl": "P1D"
+                     },
+                     "payment": {
+                            "params": {
+                                   "transaction_id": "TXN-rxy0ic136",
+                                   "amount": "300.0000",
+                                   "currency": "INR"
+                            },
+                            "type": "ON-ORDER",
+                            "status": "PAID",
+                            "collected_by": "BAP"
+                     }
+              }
+       }
+}
